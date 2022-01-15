@@ -5,9 +5,76 @@ body {
     padding:0;
 }
 
+
+
 .head__wrapper{
     background-color: black;
     color:white;
     height:110px;
 }
 
+.social__wrapper{
+
+}
+
+.social__ul{
+    display:flex;
+}
+
+.social__icons{
+    margin-right: 30px;
+}
+
+.link__btn {
+    text-decoration:none;
+}
+
+ul {
+    list-style-type:none;
+}
+
+a {
+    color:white;
+}
+
+.roadmap__h1{
+    margin-left: 20px;
+}
+
+.roadmap__li{
+    color:black;
+    text-decoration: none;
+}
+
+.roadmap__li:hover {
+    text-decoration:underline;
+}
+
+.roadmap__li{
+    color:black;
+}
+
+.back__btn {
+    background-color: black;
+    color:white;
+    padding:15px 32px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    margin:10px 0 0 10px;
+}
+
+.back__btn:hover{
+    background-color: white;
+    color:black;
+    transition: 0.5s;
+}
+
+.variable__p {
+    margin:20px;
+}
+
+.variable__h2{
+    margin:20px;
+}
