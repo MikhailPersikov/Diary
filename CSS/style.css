@@ -33,6 +33,10 @@ ul {
     list-style-type:none;
 }
 
+li{
+    margin-top:10px;
+}
+
 a {
     color:white;
 }
@@ -71,10 +75,10 @@ a {
     transition: 0.5s;
 }
 
-.variable__p {
+p {
     margin:20px;
 }
 
-.variable__h2{
+h2{
     margin:20px;
 }
