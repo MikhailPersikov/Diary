@@ -8,14 +8,21 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.head__wrapper{
-    background-color: black;
-    color:white;
-    height:110px;
+.social__wrapper{
+    background-color: inherit;
+    width:200px;
+    height:50px;
 }
 
 .social__ul{
     display:flex;
+    justify-content: space-between;
+}
+
+.head__wrapper{
+    background-color: black;
+    color:white;
+    height:110px;
 }
 
 .social__icons{
@@ -95,4 +102,36 @@ h3{
     height:100px;
     margin-top:10px;
     color:white;
+}
+
+.list__link-ul{
+    display:flex;
+
+}
+
+.list__link-icon {
+    fill:#afb1b8;
+    width: 30px;
+    height: 30px;
+}
+
+.list__item{
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.codepen:hover{
+    fill:blue;
+    background-color: rgb(248, 252, 248);
+}
+
+.facebook:hover{
+    fill:#4867aa;
+    background-color: rgb(248, 252, 248);
+}
+
+.telegram:hover{
+    fill:#23aaeb;
+    background-color: rgb(248, 252, 248);
 }
