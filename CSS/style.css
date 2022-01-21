@@ -126,10 +126,24 @@ h3{
 }
 
 .function__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* letter-spacing: 1px; */
     background-color: #181d1c;
-    height:100px;
+    min-height:100px;
     margin-top:10px;
     color:white;
+}
+
+.function__wrapper{
+    display:flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    min-height:100px;
+    background-color: #2d333b;
 }
 
 .list__link-ul{
@@ -179,4 +193,8 @@ h3{
     background-color: green;
     margin-right: 5px;
     margin-top: 100px;
+}
+.code-text{
+    color:black;
+    background-color: white;
 }

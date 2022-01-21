@@ -11,16 +11,70 @@
 <body>
     <header class="head">
         <div class="head__wrapper">
-            <ul class="social__ul">
-                <li class="social__icons"><a href="https://twitter.com" class=" link__btn fab fa-twitter"></a></li>
-                <li class="social__icons"><a href="https://www.linkedin.com/" class="link__btn fab fa-linkedin"></a></li>
-                <li class="social__icons"><a href="https://t.me/texasjkee" class="link__btn fas fa-paper-plane"></a></li>
+          <div class="section-one">Здесь будет лого</div>
+          <div class="section-two">
+            <a  class ="back__btn" href="../index.html">Road map</a>
+          </div>
+          <div class="section-three">
+         <p>Тестирую svg</p>
+            <div class="social__wrapper">
+            <ul class="list__link-ul">
+              <li class="list__item">
+                <a href="https://codepen.io/trending" class="list__link">
+                  <svg class="list__link-icon codepen">
+                    <use xlink:href="../img/sprite.svg#codepen"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list__item ">
+                <a href="https://facebook.com" class="list__link">
+                  <svg class="list__link-icon facebook">
+                    <use xlink:href="../img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="https://t.me/m_persikov" class="list__link">
+                  <svg class="list__link-icon telegram">
+                    <use xlink:href="../img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
+          </div>
+          </div>
         </div>
-    </header>
-    <a  class ="back__btn" href="../index.html">Back</a> 
+      </header>
     <div class="function__content">
-        <p>Functions</p>
+        <div class="function__wrapper">
+        <h2>Функции</h2>
+        <p>Зачастую нам надо повторять одно и то же действие во многих частях программы.</p>
+        <p>Например, необходимо красиво вывести сообщение при приветствии посетителя, при выходе посетителя с сайта, ещё где-нибудь.</p>
+        <p>Чтобы не повторять один и тот же код во многих местах, придуманы функции. Функции являются основными «строительными блоками» программы.</p>
+        <p>К примеру <code class="code-text">alert(message)</code> , <code class="code-text">prompt(message, default)</code> , <code class="code-text">confirm(question)</code> тоже функции.</p>
+        <h3>Объявление функции</h3>
+        <p>Для создания функций мы можем использовать объявление функции.</p>
+        <p>
+        <code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">showMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span> <span class="token string">'Всем привет!'</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span></code>
+        </p>
+        <p>Вначале идёт ключевое слово <code class="code-text">function</code> , <em>имя функции</em> после него , затем список параметров в круглых скобках через запятую (в вышеприведённом примере он пустой) и, наконец, код функции, также называемый «телом функции», внутри фигурных скобок.</p>
+        <p>function имя(параметры) { <br>
+            ...тело...
+          }</p>
+        <p>Наша новая функция может быть вызвана по её имени: <code class="code-text">showMessage()</code> .</p>
+        <p> function showMessage() { <br>
+            alert( 'Всем привет!' ); <br>
+          } <br>
+          
+          showMessage(); <br>
+          showMessage();</p>
+        <p>Вызов <code class="code-text">showMessage()</code> выполняет код функции. Здесь мы увидим сообщение дважды.</p>
+    <p>Этот пример явно демонстрирует одно из главных предназначений функций: избавление от дублирования кода.</p>
+    <p>Если понадобится поменять сообщение или способ его вывода – достаточно изменить его в одном месте: в функции, которая его выводит.</p>
+    </div>
+
     </div> 
 </body>
 </html>
