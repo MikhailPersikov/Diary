@@ -125,7 +125,7 @@ h3{
     justify-content: center;
 }
 
-.function__content{
+.content__wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -136,7 +136,7 @@ h3{
     color:white;
 }
 
-.function__wrapper{
+.content__text{
     display:flex;
     display: flex;
     flex-direction: column;
