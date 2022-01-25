@@ -37,10 +37,6 @@ body {
     font-size:20px
 }
 
-ul {
-    list-style-type:none;
-}
-
 li{
     margin-top:10px;
 }
@@ -83,17 +79,6 @@ a {
     transition: 0.5s;
 }
 
-p {
-    margin:20px;
-}
-
-h2{
-    margin:20px;
-}
-
-h3{
-    margin:20px;
-}
 .section-one{
     display: flex;
     justify-content: center;
@@ -144,6 +129,13 @@ h3{
     width: 800px;
     min-height:100px;
     background-color: #2d333b;
+    padding:0 20px;
+}
+
+.content__text code{
+    padding:5px 50px;
+    background-color: white;
+    color: black;
 }
 
 .list__link-ul{
