@@ -10,10 +10,11 @@ body {
 
 
 :root{
-    --js-let: #ff79c6;
+    --js-keyword: #ff79c6;
     --js-number:  #bd93f9;
     --js-comment: #6272a4;
-    --js-alert: #8be9fd;
+    --js-function: #8be9fd;
+    --js-punctuation:#f8f8f2;
 }
 
 .social__ul{
@@ -138,7 +139,7 @@ a {
     display:flex;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     width: 850px;
     min-height:100px;
     padding:0 50px;
@@ -148,6 +149,8 @@ a {
     text-decoration: none;
     color:#84a0ef;
 }
+
+/* language-javascript */
 
 .content__text code{
     padding:5px 50px;
@@ -163,7 +166,7 @@ a {
 .content__text i{
     background-color: #282a36;
     color: #868d9a;
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 2px 4px;
 }
 
@@ -221,8 +224,8 @@ a {
     background-color: white;
 }
 
-.let{
-    color: var(--js-let);
+.keyword{
+    color: var(--js-keyword);
 }
 
 .number {
@@ -233,7 +236,15 @@ a {
     color: var(--js-comment);
 }
 
-.alert{
-    color: var(--js-alert);
+.function{
+    color: var(--js-function);
+}
+
+.class-name{
+    color: var(--js-function);
+}
+
+.punctuation{
+    color: var(--js-punctuation); 
 }
 
