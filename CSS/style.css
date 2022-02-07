@@ -8,7 +8,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
 :root{
     --js-keyword: #ff79c6;
     --js-number:  #bd93f9;
@@ -25,7 +24,7 @@ body {
 .head__wrapper{
     display:flex;
     justify-content: space-between;
-    background-color: #181d1c;
+    background-color: #2d333b;
     color:white;
     height:100px;
 }
@@ -39,13 +38,17 @@ body {
 }
 
 .ul__wrapper{
-    font-weight: 700;
-    font-style:bold;
-    font-size:20px
+    font-size:20px;
+}
+
+.ul__roadmap{
+    list-style: none;
+    color: #c4c7cf;
 }
 
 li{
     margin-top:10px;
+    color: #c4c7cf;
 }
 
 a {
@@ -57,20 +60,16 @@ a {
 }
 
 .roadmap__li{
-    color:black;
+    color: #c4c7cf;
     text-decoration: none;
 }
 
 .roadmap__li:hover {
-    text-decoration:underline;
-}
-
-.roadmap__li{
-    color:black;
+    color:#e3796a;
 }
 
 .back__btn {
-    background-color: black;
+    background-color: inherit;
     color:white;
     padding:15px 32px;
     -webkit-appearance: button;
@@ -81,8 +80,7 @@ a {
 }
 
 .back__btn:hover{
-    background-color: white;
-    color:black;
+    color:#e3796a;
     transition: 0.5s;
 }
 
