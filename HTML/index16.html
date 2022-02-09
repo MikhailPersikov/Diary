@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Scheduling: setTimeout and setInterval</title>
 </head>
+
 <body>
-    
+    <header class="head">
+        <div class="head__wrapper">
+            <a class="back__btn" href="../index.html">Home</a>
+        </div>
+    </header>
+    <div class="content__wrapper">
+        <nav class="navigation">
+            <ul class="li navigation__li">Способы записи числа</ul>
+            <ul class="li navigation__li">test</ul>
+            <ul class="li navigation__li">test</ul>
+            <ul class="li navigation__li">test</ul>
+            <ul class="li navigation__li">test</ul>
+        </nav>
+        <div class="content__text">
+            <h1>Планирование: setTimeout и setInterval</h1>
+            <p>Мы можем вызвать функцию не в данный момент, а позже, через заданный интервал времени. Это называется
+                «планирование вызова».</p>
+            <p>Для этого существуют два метода:</p>
+            <ul>
+                <li>
+                    <p><i>setTimeout</i> позволяет вызвать функцию один раз через определённый интервал времени.</p>
+                </li>
+                <li>
+                    <p> <i> setInterval</i> позволяет вызывать функцию регулярно, повторяя вызов через определённый
+                        интервал времени.</p>
+                </li>
+            </ul>
+            <p>Эти методы не являются частью спецификации JavaScript. Но большинство сред выполнения JS-кода имеют внутренний планировщик и предоставляют доступ к этим методам. В частности, они поддерживаются во всех браузерах и Node.js.</p>
+            <h3>setTimeout</h3>
+            <p>Синтаксис:</p>
+            <code class=" language-javascript"><span class="token keyword">let</span> timerId <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span>func<span class="token operator">|</span>code<span class="token punctuation">,</span> <span class="token punctuation">[</span>delay<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>arg1<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>arg2<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">)</span></code>
+            <p>Параметры:</p>
+            <p><i>func|code</i></p>
+            <p>Функция или строка кода для выполнения. Обычно это функция. По историческим причинам можно передать и строку кода, но это не рекомендуется.</p>
+            <p><i>delay</i></p>
+            <p>Задержка перед запуском в миллисекундах (1000 мс = 1 с). Значение по умолчанию – 0.</p>
+           <p><i>arg1</i>,<i>arg2</i></p> 
+            <p>Аргументы, передаваемые в функцию (не поддерживается в IE9-)</p>
+            <p>Например, данный код вызывает <i>sayHi()</i> спустя одну секунду:</p>
+            <code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>          <br>       
+               <span class ="tab"></span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Привет'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                 <br>
+              <span class="token punctuation">}</span>         <br>
+              
+              <em class="block-highlight"><span class="token function">setTimeout</span><span class="token punctuation">(</span>sayHi<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></em></code>
+        </div>
+    </div>
 </body>
+
 </html>
